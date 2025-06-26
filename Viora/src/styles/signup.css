@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+.container {
+    margin-top: 5vh;
+    display: flex;
+    height: 90vh;
+    font-family: 'Varela Round', sans-serif;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 100px;     
+  height: auto;
+  z-index: 1000;   
+}
+.logo img {
+  width: 100%;      
+  height: auto;
+}
+.left {
+  flex: 1;
+  margin-left: 20px;
+}
+.left img{
+    width: 60px;
+    height: 80px;
+    animation: pop 0.6s ease-in-out;
+}
+.right {
+  flex: 1;
+  background-color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+.right h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -30px;
+}
+.para{
+    margin-bottom: 50px;
+    margin-right: -40px;
+    color: gray;
+}
+.right input {
+  width: 180%;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  margin-left: -80px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.right input:focus {
+  border-bottom: 2px solid hsl(211, 28%, 22%); 
+}
+.right button{
+    background-color: rgb(43, 125, 247);
+    width: 12vw;
+    height: 5vh;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    margin-left: 40px;
+    font-size: 15px;
+    margin-bottom: -17px;
+    align-self: center;
+}
+.right p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: none;
+    margin-top: 50px;
+    margin-left: -50px;
+}
+.form-card .new{
+    margin-left: 20px;
+}
+.right p span{
+    color: rgb(43, 125, 247);
+    cursor: "pointer";
+    font-size: "inherit";
+    margin-left: 20px;
+}
+.form-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.201);
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+@keyframes pop {
+  from { 
+    transform: scale(0.95); 
+    opacity: 0; 
+}
+  to { 
+    transform: scale(1); 
+    opacity: 1; 
+}
+}
